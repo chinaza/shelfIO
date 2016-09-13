@@ -1,0 +1,20 @@
+{
+  "name": "shelfIO",
+  "authors": [
+    "Chinaza chinaza@zhaptek.com"
+  ],
+  "description": "Customizable bookshelf for web apps",
+  "main": "dist/shelf.js",
+  "keywords": [
+    "shelf"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.zhaptek.com/dev",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
