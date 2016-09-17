@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./dist/css/shelfio.min.css" rel="stylesheet">
+
+  <title>Bookstore</title>
+</head>
+
+<body>
+  <form class="shelfContainer">
+    <br>
+    <br>
+    <div class="container-fluid visible" id="BookShelf">
+
+    </div>
+  </form>
+
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./dist/js/main.js"></script>
+  <script>
+  var bookdata = [
+    {
+      id: '2f24f2',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    },
+    {
+      id: '2f24f2',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    },
+    {
+      id: '2f24f2',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    },
+    {
+      id: '2f24f2',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    },
+    {
+      id: '2f24f2',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    },
+    {
+      id: '2f24f2',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    },
+    {
+      id: '2f24f2',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    },
+    {
+      id: '2f24f2',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    },
+    {
+      id: '2f24f2',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    }
+  ];
+  new BooksData(bookdata, './dist/img/shelf.png');
+  </script>
+</body>
+
+</html>

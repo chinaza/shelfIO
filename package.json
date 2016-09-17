@@ -1,0 +1,31 @@
+{
+  "name": "shelfio",
+  "version": "1.0.0",
+  "description": "Responsive bookstore library for web apps",
+  "main": "dist/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinaza/shelfIO.git"
+  },
+  "keywords": [
+    "BookShelf"
+  ],
+  "author": "Chinaza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinaza/shelfIO/issues"
+  },
+  "homepage": "https://github.com/chinaza/shelfIO#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-minify": "0.0.14",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.13.6"
+  }
+}
