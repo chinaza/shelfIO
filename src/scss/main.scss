@@ -5,30 +5,26 @@
   overflow-y:scroll;
   position:relative;
   background-color: $background-color;
-  background-size:contain;
+  background-size: contain;
 }
 
-.shf, .shfG{
+.shelf{
   position:absolute;
   top: 0;
   left: 0;
 }
 
 .shf{
+  @extend .shelf;
   margin-left:27%;
   width:50%;
   z-index:10;
 }
 
 .shfG{
+  @extend .shelf;
   width:100%;
   z-index:5;
-}
-
-.articleP{
-  position:absolute;
-  top: 0;
-  left: 0;
 }
 
 .shfMargin{
@@ -39,6 +35,12 @@
   margin-top:8%;
 }
 
-.bbook{
-  box-shadow: 5px 2px 9px #6A6A6A;
+.articleP{
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+
+.book{
+  box-shadow: $bookShadow;
 }

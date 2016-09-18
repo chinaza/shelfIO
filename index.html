@@ -6,7 +6,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="description" content="Responsive customizable bookshelf for web apps">
+  <meta name="keywords" content="HTML,CSS,Typescript,Bookshelf,Responsive, Customizable,Bower,Jquery,Bootstrap">
+  <meta name="author" content="chinaza@zhaptek.com">
   <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="./dist/css/shelfio.min.css" rel="stylesheet">
 
@@ -24,11 +26,16 @@
 
   <script src="./bower_components/jquery/dist/jquery.min.js"></script>
   <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="./dist/js/main.js"></script>
+  <script src="./dist/js/shelfio.min.js"></script>
   <script>
-  var bookdata = [
+  var bookdata = [ //Dummy Books JSON array
     {
-      id: '2f24f2',
+      id: '2f24f0',
+      title: 'How to love',
+      img: './dist/img/bcover-default.png'
+    },
+    {
+      id: '2f24f1',
       title: 'How to love',
       img: './dist/img/bcover-default.png'
     },
@@ -38,42 +45,42 @@
       img: './dist/img/bcover-default.png'
     },
     {
-      id: '2f24f2',
+      id: '2f24f3',
       title: 'How to love',
       img: './dist/img/bcover-default.png'
     },
     {
-      id: '2f24f2',
+      id: '2f24f4',
       title: 'How to love',
       img: './dist/img/bcover-default.png'
     },
     {
-      id: '2f24f2',
+      id: '2f24f5',
       title: 'How to love',
       img: './dist/img/bcover-default.png'
     },
     {
-      id: '2f24f2',
+      id: '2f24f6',
       title: 'How to love',
       img: './dist/img/bcover-default.png'
     },
     {
-      id: '2f24f2',
+      id: '2f24f7',
       title: 'How to love',
       img: './dist/img/bcover-default.png'
     },
     {
-      id: '2f24f2',
-      title: 'How to love',
-      img: './dist/img/bcover-default.png'
-    },
-    {
-      id: '2f24f2',
+      id: '2f24f8',
       title: 'How to love',
       img: './dist/img/bcover-default.png'
     }
   ];
-  new BooksData(bookdata, './dist/img/shelf.png');
+  new BooksData(bookdata, './dist/img/shelf.png'); //Pass in Books JSON Array and shelf image
+  $(document).ready(function(){
+    $('.book').click(function(event){
+      console.log(event.currentTarget.id); //Return clicked book id for further processing
+    });
+  });
   </script>
 </body>
 

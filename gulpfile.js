@@ -6,6 +6,7 @@ const imagemin = require('gulp-imagemin');
 var ts = require("gulp-typescript");
 var tsProject = ts.createProject("tsconfig.json");
 var sourcemaps = require('gulp-sourcemaps');
+var jsmin = require('gulp-jsmin');
 var rename = require('gulp-rename');
 
 gulp.task('sass', function () {
@@ -20,11 +21,10 @@ gulp.task('sass', function () {
 gulp.task('ts', function () {
   tsProject.src()
   .pipe(ts(tsProject))
-  .js.pipe(gulp.dest("dist/js"));
-
-  gulp.src("./dist/js/main.js")
+  .js
+  .pipe(jsmin())
   .pipe(rename("shelfio.min.js"))
-  .pipe(gulp.dest("./dist/js"));
+  .pipe(gulp.dest("dist/js"));
 });
 
 gulp.task('sass:watch', function () {

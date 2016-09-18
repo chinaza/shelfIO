@@ -31,7 +31,7 @@ class BooksData{
         $('#BookShelf').append(shef);
       }
 
-      content = '<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><a href="" class="bbbok" id="'+ book.id +'"><img src="' + book.img +'" class="shf bbook img-responsive" data-toggle="tooltip" title="' + book.title + '"/></a></div>';
+      content = '<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img src="' + book.img +'" id="'+ book.id +'" class="shf book img-responsive" data-toggle="tooltip" title="' + book.title + '"/></div>';
       let di = '#row' + iii;
       $(di).append(content)
       i++;
