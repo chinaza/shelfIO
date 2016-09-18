@@ -75,8 +75,8 @@
       img: './dist/img/bcover-default.png'
     }
   ];
-  new BooksData(bookdata, './dist/img/shelf.png'); //Pass in Books JSON Array and shelf image
   $(document).ready(function(){
+    new BooksData(bookdata, './dist/img/shelf.png'); //Pass in Books JSON Array and shelf image
     $('.book').click(function(event){
       console.log(event.currentTarget.id); //Return clicked book id for further processing
     });
